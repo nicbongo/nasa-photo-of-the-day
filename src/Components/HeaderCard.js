@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 
 const HeaderCard = props => {
+    console.log(props)
+
+    
+
+
     return (
-    <>
-        <img src={props} alt="Nasa's picof the day"/>
-        <button>HD</button>
+    <div className="pic-of-the-day">
+        <img src={props.image} alt="Nasa's pic of the day"/>
+        <br></br>
         <button>Standard</button>
-    </>
+        <button>HD</button>
+    </div>
     )
         
     
