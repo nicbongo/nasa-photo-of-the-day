@@ -21,6 +21,7 @@ const ImageStyled = styled.img`
 const ButtonCont = styled.div`
     display: flex;
     justify-content: center;
+    
 `;
 
 const Button = styled.button`
