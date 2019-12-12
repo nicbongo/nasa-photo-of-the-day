@@ -1,14 +1,30 @@
 import React from "react";
 import "./App.css";
-import Header from "../src/Components/Header";
+import styled from "styled-components";
+
+import PageTitles from "./Components/PageTitles"
+import APOD from "../src/Components/APOD";
+import NavBar from "./Components/NavBar"
+
+
+const AppDiv = styled.div`
+  background-color: #2B3E42;
+  display: flex;
+  flex-direction: column;
+  padding: 0 5%;
+  justify-content: center;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <h1> NASA </h1><h4>APOD</h4>
-      <Header />
+    
+    <AppDiv>
+      <PageTitles />
+      <APOD />   
+    </AppDiv>
+    
       
-    </div>
+    
   );
 }
 
